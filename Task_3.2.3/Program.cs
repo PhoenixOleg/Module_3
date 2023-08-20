@@ -16,6 +16,29 @@ namespace Task_3_2_3
             //Tasks();
             Console.WriteLine("Итоговое задание Модуля 3");
 
+            Console.Write("Введите Ваше имя: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Введите Ваш возраст: ");
+
+
+            var age = checked((byte)int.Parse(Console.ReadLine()));
+
+            //Тут почитал https://learn.microsoft.com/ + практика на vb.net
+            DateTime dtBirth;
+            bool result;
+            Console.Write("Введите Вашу дату рождения: ");
+            result = DateTime.TryParse(Console.ReadLine(), out dtBirth);
+
+            if (result == false)
+                Console.WriteLine("Вы ввели некорректное значение даты. Запустите программу повторно.");
+            else
+            {
+                Console.WriteLine("\nЗдравствуйте, " + name);
+                Console.WriteLine("Вам {0} лет", age);
+                Console.WriteLine($"Выродились {dtBirth:dd.MM.yyyy}");
+            }
+
             Console.ReadKey();
 
         }
