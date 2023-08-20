@@ -32,6 +32,12 @@ namespace Task_3_2_3
             Console.WriteLine("Do i have pet? " + IsHavePet);
             Console.WriteLine("My shoe size is " + MyShoeSize);
 
+            Console.WriteLine("\n");
+            Console.WriteLine("Int min value " + int.MinValue);
+            Console.WriteLine("Int max value " + int.MaxValue);
+            Console.WriteLine("\n");
+            Console.WriteLine("Dec min value {0}", decimal.MinValue);  ;
+            Console.WriteLine("Dec max value {0}", decimal.MaxValue);
             Console.ReadKey();
         }
     }
